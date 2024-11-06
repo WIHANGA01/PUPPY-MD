@@ -12,7 +12,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-if(!q) return reply("❌Please give me url or titel")
+if(!q) return reply("❌url nathuwa title ekak dapan")
 const search = await yts(q)
 const deta = search.videos[0];
 const url = deta.url 
@@ -34,7 +34,29 @@ let desc= `
 |__________________________
 
 > POWERED by *PUPPY-MD*
+-----------------------
+------------------------------------------
+🪄 PUPPY-MD SONG DOWLOAD 🪄
 
+🪅TITLE > ♨️${data.title}♨️
+
+🪅DESC > 📼 ${data.description}📼
+
+🪅TIME > ⏰${deta.timestamp}⏰
+
+🪅 AGO > ⌛${deta.ago}⌛
+
+🪅VIEWD >🧿 ${data.views}🪬
+
+
+
+" LISTEN SONG  💆🏼‍♂️🤍🍃 "
+
+
+
+> PUPPY-MD SONG DOWNLOAD ⛓‍💥
+
+----------------------------------------
 `
 
 await conn.sendMessage(from,{image :{ url: deta.thumbnail},caption:desc},{quoted:mek});
