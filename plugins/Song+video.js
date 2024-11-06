@@ -18,22 +18,7 @@ const deta = search.videos[0];
 const url = deta.url 
 
 let desc= `
-*PUPPY-MD SONG DOWNLKOAD*
-|__________________________
 
-| 🎠title : ${deta.title}
-
-| 🎠description : ${deta.description}
-
-| 🎠time : ${deta.timestamp}
-
-| 🎠ago : ${deta.ago}
-
-| 🎠views : ${deta.views}
-
-|__________________________
-
-> POWERED by *PUPPY-MD*
 -----------------------
 ------------------------------------------
 🪄 PUPPY-MD SONG DOWLOAD 🪄
