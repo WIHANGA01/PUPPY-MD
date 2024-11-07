@@ -19,17 +19,16 @@ const url = deta.url
 
 let desc= `
 
------------------------
-------------------------------------------
+-------------------------------------------
 🪄 PUPPY-MD SONG DOWLOAD 🪄
 
-🪅TITLE > ♨️${data.title}♨️
+🪅TITLE > ♨️ ${data.title} ♨️
 
-🪅DESC > 📼 ${data.description}📼
+🪅DESC > 📼 ${data.description} 📼
 
-🪅TIME > ⏰${deta.timestamp}⏰
+🪅TIME > ⏰ ${deta.timestamp} ⏰
 
-🪅 AGO > ⌛${deta.ago}⌛
+🪅 AGO > ⌛ ${deta.ago} ⌛
 
 🪅VIEWD >🧿 ${data.views}🪬
 
