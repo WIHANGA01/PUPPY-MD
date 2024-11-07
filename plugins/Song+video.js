@@ -17,16 +17,24 @@ const search = await yts(q)
 const deta = search.videos[0];
 const url = deta.url 
 
-let desc= `
-*•.¸♡ WIHANGA-MD  🤍 AUDIO-DOWNLOADER🎶 ♡¸.•*
-|__________________________
-| 🎠title : ${deta.title}
-| 🎠description : ${deta.description}
-| 🎠time : ${deta.timestamp}
-| 🎠ago : ${deta.ago}
-| 🎠views : ${deta.views}
-|__________________________
+let desc= `🤍WIHANGA-MD SONG DOWNLOAD🤍
 
+__________________________
+
+> | 🪅title : ${deta.title} 🍃
+
+> 🪅description : ${deta.description} 🍃
+
+> | 🪅time : ${deta.timestamp} 🍃
+
+| 🪅ago : ${deta.ago} 🍃
+
+> | 🪅views : ${deta.views} 🍃
+
+_________________________
+
+
+⚖️powerd by > WIHANGA-MD⚖️
 `
 
 await conn.sendMessage(from,{image :{ url: deta.thumbnail},caption:desc},{quoted:mek});
@@ -38,7 +46,7 @@ let downloadUrl = down.dl_url
 
 //send audio message 
 await conn.sendMessage(from,{audio:{url:downloadUrl},mimetype:"audio/mpeg",caption :"*©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋɴᴇᴏɴᴄʏʙᴇʀꜱ*"},{quoted:mek})
-await conn.sendMessage(from,{document:{url:downloadUrl},mimetype:"audio/mpeg",fileName:deta.title + ".mp3" ,caption :"*©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋɴᴇᴏɴᴄʏʙᴇʀꜱ*"},{quoted:mek})
+await conn.sendMessage(from,{document:{url:downloadUrl},mimetype:"audio/mpeg",fileName:deta.title + ".mp3" ,caption :"> WIHANGA-MD"},{quoted:mek})
 
   
 
@@ -86,7 +94,7 @@ let downloadUrl = down.dl_url
 
 //send video  message 
 await conn.sendMessage(from,{video:{url:downloadUrl},mimetype:"video/mp4",caption :"*©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋɴᴇᴏɴᴄʏʙᴇʀꜱ*"},{quoted:mek})
-await conn.sendMessage(from,{document:{url:downloadUrl},mimetype:"video/mp4",fileName:deta.title + ".mp4",caption :"*©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋɴᴇᴏɴᴄʏʙᴇʀꜱ*"},{quoted:mek})
+await conn.sendMessage(from,{document:{url:downloadUrl},mimetype:"video/mp4",fileName:deta.title + ".mp4",caption :"> WIHANGA-MD"},{quoted:mek})
 
   
 
